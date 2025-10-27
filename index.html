@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PWA Personas</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#2196f3">
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Registro de Personas</h1>
+
+    <form id="personForm">
+      <input id="name" placeholder="Nombre" required>
+      <input id="age" type="number" placeholder="Edad" required>
+      <input id="email" type="email" placeholder="Correo" required>
+      <button id="submit" type="submit">Registrar</button>
+    </form>
+
+    <div id="spinner" class="spinner hidden"></div>
+
+    <section id="personList" class="person-list"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
